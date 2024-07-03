@@ -33,7 +33,7 @@ $$
 -   $\sum (y_i - \hat{y}\_i)^2$ is the sum of the squared residuals (SSR).
 -   $\sum (y_i - \bar{y})^2$ is the total sum of squares (SST).
 
-# **Equation of the Regression Line**
+# Equation of the Regression Line
 
 To calculate R-squared (R²), we need to understand how well the regression line predicts the actual data points. The given equation of the regression line is:
 
@@ -41,7 +41,7 @@ $$
 \hat{y} = 0.143 + 1.229x
 $$
 
-# **Observed Data Points**
+# Observed Data Points
 
 ![](Graph.png){fig-align="center"}
 
@@ -52,7 +52,7 @@ From the graph, we can see the observed data points are:
 -   (4, 6)
 -   (6, 7)
 
-# **Calculate Predicted Values (**$\hat{y}$)
+# Calculate Predicted Values ($\hat{y}$)
 
 Use the regression line equation to calculate the predicted values for each ( x ):
 
@@ -80,7 +80,7 @@ $$
 \hat{y} = 0.143 + 1.229 \times 6 = 7.517 \
 $$
 
-# **Calculate Residuals (Errors)**
+# Calculate Residuals (Errors)
 
 The residual for each point is the difference between the actual ( y ) value and the predicted ( y ) value:
 
@@ -92,7 +92,7 @@ For (4, 6): $$ r_3 = y_3 - \hat{y}_3 = 6 - 5.059 = 0.941 $$
 
 For (6, 7): $$ r_4 = y_4 - \hat{y}_4 = 7 - 7.517 = -0.517 $$
 
-# **Sum of Squared Residuals (SSR)**
+# Sum of Squared Residuals (SSR)
 
 Calculate the sum of the squared residuals:
 
@@ -100,9 +100,9 @@ $$
 SSR = (-0.601)^2 + (0.17)^2 + (0.941)^2 + (-0.517)^2 = 1.542871
 $$
 
-# **Total Sum of Squares (SST)**
+# Total Sum of Squares (SST)
 
-Calculate the mean of the observed \$ y \$ values:
+Calculate the mean of the observed $y$ values:
 
 $$
 \bar{y} = \frac{2 + 4 + 6 + 7}{4} = 4.75
@@ -114,7 +114,7 @@ $$
 SST = (2 - 4.75)^2 + (4 - 4.75)^2 + (6 - 4.75)^2 + (7 - 4.75)^2 = 14.75
 $$
 
-# **Calculate R-squared (R²)**
+# Calculate R-squared (R²)
 
 Finally, calculate R-squared using the formula:
 
