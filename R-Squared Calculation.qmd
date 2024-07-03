@@ -1,0 +1,131 @@
+---
+title: "R-Squared Calculation"
+author: "Dr Muhammad Saufi"
+date: last-modified
+format: 
+  html:
+    toc: true
+    toc-title: Contents
+    toc-location: left
+    toc-depth: 5
+    toc-expand: 1
+    number-sections: true
+    code-fold: true
+    code-summary: "Code"
+    code-link: true
+    theme:
+      light: united
+      dark: cyborg
+    css: styles.css
+editor: visual
+include-after-body: "footer.html"
+---
+
+# R-Squared (R²) Calculation Formula
+
+$$
+R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}
+$$
+
+-   $y_i$ are the observed values.
+-   $\hat{y}\_i$ are the predicted values from the regression model.
+-   $\bar{y}$ is the mean of the observed values.
+-   $\sum (y_i - \hat{y}\_i)^2$ is the sum of the squared residuals (SSR).
+-   $\sum (y_i - \bar{y})^2$ is the total sum of squares (SST).
+
+# **Equation of the Regression Line**
+
+To calculate R-squared (R²), we need to understand how well the regression line predicts the actual data points. The given equation of the regression line is:
+
+$$
+\hat{y} = 0.143 + 1.229x
+$$
+
+# **Observed Data Points**
+
+![](Graph.png){fig-align="center"}
+
+From the graph, we can see the observed data points are:
+
+- (2, 2) 
+- (3, 4) 
+- (4, 6) 
+- (6, 7)
+
+# **Calculate Predicted Values (**$\hat{y}$)
+
+Use the regression line equation to calculate the predicted values for each ( x ):
+
+For $x = 2$:
+
+$$ 
+\hat{y} = 0.143 + 1.229 \times 2 = 2.601 \
+$$
+
+For $x = 3$:
+
+$$ 
+\hat{y} = 0.143 + 1.229 \times 3 = 3.83 \
+$$
+
+For $x = 4$:
+
+$$ 
+\hat{y} = 0.143 + 1.229 \times 4 = 5.059 \
+$$
+
+For $x = 6$:
+
+$$ 
+\hat{y} = 0.143 + 1.229 \times 6 = 7.517 \
+$$
+
+# **Calculate Residuals (Errors)**
+
+The residual for each point is the difference between the actual ( y ) value and the predicted ( y ) value:
+
+For (2, 2): 
+$$ r_1 = y_1 - \hat{y}_1 = 2 - 2.601 = -0.601 $$
+
+For (3, 4): 
+$$ r_2 = y_2 - \hat{y}_2 = 4 - 3.83 = 0.17 $$
+
+For (4, 6): 
+$$ r_3 = y_3 - \hat{y}_3 = 6 - 5.059 = 0.941 $$
+
+For (6, 7): 
+$$ r_4 = y_4 - \hat{y}_4 = 7 - 7.517 = -0.517 $$
+
+# **Sum of Squared Residuals (SSR)**
+
+Calculate the sum of the squared residuals:
+
+$$
+SSR = (-0.601)^2 + (0.17)^2 + (0.941)^2 + (-0.517)^2 = 1.542871
+$$
+
+# **Total Sum of Squares (SST)**
+
+Calculate the mean of the observed \$ y \$ values:
+
+$$
+\bar{y} = \frac{2 + 4 + 6 + 7}{4} = 4.75
+$$
+
+Calculate the total sum of squares:
+
+$$
+SST = (2 - 4.75)^2 + (4 - 4.75)^2 + (6 - 4.75)^2 + (7 - 4.75)^2 = 14.75
+$$
+
+# **Calculate R-squared (R²)**
+
+Finally, calculate R-squared using the formula:
+
+$$
+R^2 = 1 - \frac{SSR}{SST} = 1 - \frac{1.542871}{14.75} = 1 - 0.105 = 0.895
+$$
+
+# Conclusion
+
+The R-squared value of 0.895 indicates that approximately 89.5% of the variance in the number of hours spent at the university per day can be explained by the number of lectures per day. This shows a strong relationship between the two variables in this example.
