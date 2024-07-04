@@ -16,7 +16,9 @@ format:
     theme:
       light: united
       dark: cyborg
+    css: styles.css
 editor: visual
+include-after-body: "footer.html"
 ---
 
 # R-Squared (R²) Calculation Formula
